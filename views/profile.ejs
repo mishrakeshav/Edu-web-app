@@ -1,0 +1,22 @@
+<%- include('base'); -%>
+
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container" style="margin-top: 15%; margin-bottom: 2%;">
+  <div class="row">
+    
+    <div class="col-md-6 details">
+      <blockquote>
+        <h1><%= user.first_name %> <%= " " + user.last_name %></h1>
+      </blockquote>
+      <p>
+        <strong><%= user.email%></strong> <br>
+      </p>
+      
+    </div>
+  </div>
+</div>
+
+<%- include('footer'); -%>

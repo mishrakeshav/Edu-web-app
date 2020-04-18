@@ -1,0 +1,13 @@
+<%- include('base'); -%>
+<div style="margin-top: 15%; margin-left: 10%; margin-right: 10%; margin-bottom: 10%;">
+<h1><%= result.title %></h1>
+<h5 ><%= result.content %></h5>
+<% if(user.id == result.user_id) {%>
+<div  style="margin-top: 5%;">
+    <a style = "margin-right: 2%;" href="/update/<%=result.id%>" class="btn btn-secondary" role="button">Update</a>
+    <a href="/delete/<%=result.id%>" class="btn btn-danger" role="button">Delete</a>
+</div>
+
+<% } %>
+</div>
+<%- include('footer'); -%>

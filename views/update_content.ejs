@@ -1,0 +1,19 @@
+<%- include('base'); -%>
+<div style="margin-top: 15%; margin-left: 10%; margin-right: 10%; margin-bottom: 10%;">
+
+<form action="/update/<%=result.id%>" method="POST">
+    <div class="form-group">
+        <label>Title </label>
+        <input  type="text" class="form-control" value="<%=result.title%>" name = "title">
+    </div>
+    <div class="form-group">
+        <label>Content</label>
+        <textarea  class="form-control"   rows="20" name = "content"><%= result.content %></textarea>
+    </div>
+    
+    <!--If Loged in-->
+    <button type="submit" name = "update" class="btn btn-secondary">Update</button>
+    <!-- <button type="submit" name = "delete" class="btn btn-primary">Delete</button> -->
+</form>
+</div>
+<%- include('footer'); -%>
